@@ -1,8 +1,3 @@
-$('video').mediaelementplayer({
-      features: ['playpause', 'progress', 'volume', 'fullscreen'],
-      startLanguage: 'en',
-    });
-
 
 const video = document.querySelector("video");
 const span = document.querySelectorAll("span");
