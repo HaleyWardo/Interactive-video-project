@@ -1,6 +1,6 @@
 $('video').mediaelementplayer({
-      features: ['playpause', 'progress', 'volume', 'fullscreen'],
-    });
+    features: ['playpause', 'current', 'progress', 'volume', 'fullscreen'],
+});
 
 
 const video = document.querySelector('video');
