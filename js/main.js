@@ -17,9 +17,9 @@ video.addEventListener('timeupdate', () => {
         const end = parseFloat(span.dataset.end);
 
         if (currentTime > start && currentTime < end) { 
-            span.style.color= '#fff';    //highlighted color
+            span.classList.add("highlight");    //highlighted color
         } else {
-            span.style.color = '#3C414E';  //default color
+            span.classList.remove("highlight");  //default color
         }
     }
 });
@@ -33,8 +33,9 @@ for  (let i = 0; i < allSpans.length; i++) {
 
     span.addEventListener('click', () => {
         if (span) {
-            video.setCurrentTime(start);
+            video.setCurrentTime(start); 
             video.play();
         }
     }); 
 };
+

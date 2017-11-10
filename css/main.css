@@ -18,6 +18,21 @@ footer {
     text-align: center;
 }
 
-.mejs_treehouse .mejs__controls {
-    color:red;
+.highlight {
+    color: #fff;
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 768px;
+        margin: 0 auto;
+    }        
+
+    .video-container {
+        margin-top: 50px;
+    }
+
+    .transcript {
+       width: 100%;
+    }
 }
