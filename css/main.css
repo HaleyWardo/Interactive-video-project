@@ -1,0 +1,23 @@
+html {
+    background-color:#3C414E; /*bright grey*/
+}
+.transcript {
+    width: 85%;
+    margin: 0 auto;
+    line-height: 25px;
+    font-family: 'News Cycle', sans-serif;
+    background-color: #26E8A8; /*java*/
+    color: #3C414E;
+    padding: 0px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.mejs_treehouse .mejs__controls {
+    color:red;
+}
