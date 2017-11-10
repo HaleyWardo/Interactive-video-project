@@ -21,21 +21,12 @@ video.addEventListener('timeupdate', () => {
         } else {
             span.classList.remove("highlight");  //default color
         }
+
+        //On click, video jumps to target section
+        span.addEventListener('click', () => {
+            video.setCurrentTime(start); 
+            video.play();        
+        }); 
     }
 });
-
-
-//On click, video jumps to target section
-for  (let i = 0; i < allSpans.length; i++) {
-    const span = allSpans[i];
-    const start = parseFloat(span.dataset.start);
-    const end = parseFloat(span.dataset.end);
-
-    span.addEventListener('click', () => {
-        if (span) {
-            video.setCurrentTime(start); 
-            video.play();
-        }
-    }); 
-};
 
